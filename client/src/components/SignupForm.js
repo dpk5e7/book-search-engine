@@ -3,6 +3,7 @@ import { Form, Button, Alert } from "react-bootstrap";
 
 import Auth from "../utils/auth";
 
+// add apollo graphql
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 
@@ -18,6 +19,7 @@ const SignupForm = () => {
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
 
+  // add addUser mutation
   const [addUser] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
@@ -36,6 +38,7 @@ const SignupForm = () => {
     }
 
     try {
+      // call addUser mutation
       const { data } = await addUser({
         variables: { ...userFormData },
       });
