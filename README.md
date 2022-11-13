@@ -67,7 +67,7 @@ The use of a web browser.
 
 ### URL
 
-- [Heroku](Heroku)
+- [https://dpk5e7-book-search-engine.herokuapp.com/](https://dpk5e7-book-search-engine.herokuapp.com/)
 
 ### Screenshots
 
